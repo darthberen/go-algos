@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+# usage: source .go-profile
+
+PWD=$(pwd)
+
+export GOPATH=$PWD
+
+export PATH=$PATH:$GOPATH/bin
