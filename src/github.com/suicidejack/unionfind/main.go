@@ -14,5 +14,11 @@ import (
 
 func main() {
 	eager.Init(10)
+	eager.Union(9, 1)
+	eager.Union(3, 6)
+	eager.Union(0, 5)
+	eager.Union(0, 7)
+	eager.Union(2, 0)
+	eager.Union(8, 9)
 	fmt.Println(eager.String())
 }

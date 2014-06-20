@@ -27,3 +27,17 @@ func String() (str string) {
 	}
 	return fmt.Sprintf("%s", str)
 }
+
+func Connected(p, q int) bool {
+	return id[p] == id[q]
+}
+
+func Union(p, q int) {
+	pid := id[p]
+	qid := id[q]
+	for i, val := range id {
+		if val == pid {
+			id[i] = qid
+		}
+	}
+}
